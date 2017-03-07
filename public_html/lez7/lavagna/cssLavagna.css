@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7-mar-2017, 14.30.49
+    Author     : tss
+*/
+
+#lavagna {
+    width: 210px;
+    height: 100px;
+    border: solid 2px green;
+    margin: 5px auto;
+}
+
+.numeri {
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: solid 1px blue;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+
+.colori {
+    width: 20px;
+    height: 10px;
+    border-radius: 2px;
+    border: solid 1px gray;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#cancella,
+#cancellaUltimo {
+    float: left;
+    width: 20px;
+    height: 20px;
+    border-radius: 2px;
+    border: solid 1px red;
+}
+
+#contenitore {
+    width: 220px;
+    margin: auto;
+}
+
+#cambiaSfondoTesto,
+#scrollBarSiNo {
+    float: left;
+    border-radius: 2px;
+    border: solid 1px red;
+    width: 120px;
+    text-align: center;
+    margin: 0px 2px;
+}
+
+#cambiaSfondoTesto span:nth-child(1),
+#scrollBarSiNo span:nth-child(1) {
+    font-weight: bold;
+}
