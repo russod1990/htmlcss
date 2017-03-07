@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function inverti() {
+                alert("ben arrivato!!!");
+                var r = prompt("introduci nome", "");
+                alert(typeof r);
+                var lunghezza = r.length;
+                var r1 = alert(typeof lunghezza);
+                var testLung = r.length > 5;
+                alert("testLung: " + testLung);
+                if (testLung) {
+                    alert("il nome è sufficientemente lungo");
+                } else {
+                    alert("il nome è troppo corto");
+                }
+                var car = r.charAt(3);
+                alert("4° carattere: '" + car + "'");
+                var s = rev(r);
+                alert(s);
+            }
+
+            function rev(x) {
+                var s = "";
+                for (var i = x.length - 1; i >= 0; i--) {
+                    s += x.charAt(i);
+                }
+                return s;
+            }
+
+            function scriviInverso() {
+                var scritta = document.getElementById("nomeUtente").value;
+                var rovescio = rev(scritta);
+                document.getElementById("nomeUtente").value = rovescio;
+            }
+            
+            function sommaDueNumeri(){
+                var a=prompt("primo numero");
+                var b=prompt("secondo numero");
+                var n1=parseFloat(a,10);
+                var n2=parseFloat(b,10);
+                alert(n1+n2);
+            }
+        </script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <input type="button" value="prova" onclick="alert('messaggio')">
+        <input type="button" value="confirm" onclick="confirm('ciao')">
+        <input type="button" value="prompt" onclick="prompt('domanda', 'risposta')">
+        <input type="button" value="inverti" onclick="inverti()">
+        <input type="text" id="nomeUtente">
+        <input type="button" value="scriviInverso" onclick="scriviInverso()">
+        <input type="button" value="somma numeri" onclick="sommaDueNumeri()">
+    </body>
+</html>

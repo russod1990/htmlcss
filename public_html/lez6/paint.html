@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="csspaint.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <div id="lavagna"></div>
+        <div id="tavolozza">
+            <table>
+                <tr><td class="color" style="background-color: red"></td></tr>
+                <tr><td class="color" style="background-color: yellow"></td></tr>
+                <tr><td class="color" style="background-color: blue"></td></tr>
+                <tr><td class="color" style="background-color: white"></td></tr>
+                <tr><td class="color" style="background-color: black"></td></tr>
+            </table>
+            <input type="button" value="reset" onclick="reset()">
+        </div>
+        <script>
+            document.getElementById("lavagna").innerHTML = creaTabellaHTML(12, 12, function () {
+                return " "
+            });
+            function creaTabellaHTML(righe, colonne, fz) {
+                righe = parseInt(righe)
+                colonne = parseInt(colonne)
+                var html = "<table>"
+                for (var i = 0; i < righe; i++) {
+                    html += "<tr>"
+                    for (var j = 0; j < colonne; j++) {
+                        html += "<td>"
+                        html += fz(i, j)
+                        html += "</td>"
+                    }
+                    html += "</tr>"
+                }
+                html += "</table>"
+                return html
+            }
+            function reset(){
+                document.getElementById("lavagna").innerHTML = creaTabellaHTML(12, 12, function () {
+                return " "
+            });
+            }
+        </script>
+    </body>
+</html>

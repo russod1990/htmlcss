@@ -1,0 +1,45 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-gen-2017, 14.02.37
+    Author     : tss
+*/
+
+div#es1   div {
+    height: 50px;
+    width: 50px;
+    border: solid 12px blue;
+    margin: 10px;
+    padding: 20px;
+    display: block;
+    outline: solid 0px red;
+    float: left;
+    font-size: 30px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px red;
+}
+
+div#es1  div:nth-of-type(even)
+{
+    float: right;
+}
+
+div#es1 {
+    border: solid 2px green;
+    height: 1000px;
+    background-color: rgba(255,0,0,.2);
+    width: 1000px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+div#es1 div:nth-child(1){
+    position:relative;
+    left: 50px;
+    top: 50px;
+    border-color: yellow;
+    background-color: white;
+}

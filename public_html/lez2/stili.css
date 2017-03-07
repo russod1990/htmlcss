@@ -1,0 +1,15 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 18-gen-2017, 10.33.50
+    Author     : tss
+*/
+
+td {width: 100px; height: 100px; background-color: aquamarine;}
+table {border-spacing: 2px;}
+#colpito{background-color: red}
+#o  {border-spacing: 1px; font-size: 1; background-color: lightcoral}
+.hit{width:auto; height: auto; background-color: gold}

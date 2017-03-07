@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 24-gen-2017, 15.59.03
+    Author     : tss
+*/
+
+table#sca {
+  border: solid 1px blue;
+  border-spacing: 0px 0px;
+  border-collapse: collapse;
+}
+
+td {
+  width: 20px;
+  height: 20px;
+  border: solid 1px gray;
+}
+/*bordo esterno blu*/
+table#sca tr:first-child td,
+table#sca tr:last-child td, 
+table#sca tr td:first-child, 
+table#sca tr td:last-child
+{
+  background-color: blue;
+} 
+
+#sca tr:nth-child(even):nth-child(-n+8)  td:nth-child(odd):nth-child(n+2),
+#sca tr:nth-child(odd):nth-child(n+2)  td:nth-child(even):nth-child(-n+8)
+{
+  background-color: #000;
+}

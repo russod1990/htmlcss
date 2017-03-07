@@ -1,0 +1,65 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27-gen-2017, 9.06.12
+    Author     : tss
+*/
+
+table#sca td:hover {background-color: red;}
+
+table#sca {
+    border: solid 1px blue;
+    border-spacing: 0px 0px;
+    border-collapse: collapse;
+    /*    background-color: green;*/
+}
+
+td {
+    width: 60px;
+    height: 60px;
+    border: solid 1px gray;
+    text-align: center;
+}
+
+table#sca .foto {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+}
+table#sca td:hover .foto {
+    opacity: 1;
+    position: absolute;
+    top:100px;
+    left: 650px;
+    width: 300px;
+    height: 300px;
+}
+
+table#sca .descrizione{
+    display: none;
+}
+
+table#sca td:hover .descrizione{
+    position: absolute;
+    top:400px;
+    left: 730px;
+    display: inline;
+    font-size: 20px;
+}
+/*bordo esterno blu*/
+/*table#sca tr:first-child td,
+table#sca tr:last-child td, 
+table#sca tr td:first-child, 
+table#sca tr td:last-child
+{
+    background-color: blue;
+} 
+
+#sca tr:nth-child(even):nth-child(-n+8)  td:nth-child(odd):nth-child(n+2),
+#sca tr:nth-child(odd):nth-child(n+2)  td:nth-child(even):nth-child(-n+8)
+{
+    background-color: #000;
+}*/

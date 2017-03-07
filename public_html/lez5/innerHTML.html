@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css_innerHTML.css" rel="stylesheet" type="text/css"/>
+        <script>
+            function svuotaTesto() {
+                confirm("sei sicuro di voler cancellare tutto il testo");
+                var r = confirm;
+                var x = "";
+                pagina.innerHTML = x;
+            }
+            function scrivi(lettera) {
+                this.lettera = lettera;
+                pagina.innerHTML += lettera;
+            }
+            function tab() {
+                pagina.innerHTML += '\t';
+            }
+            function canc() {
+                pagina = document.getElementById("pagina").innerHTML;
+                l = pagina.length-1;
+                document.getElementById("pagina").innerHTML=pagina.substring(0,l);
+            }
+        </script>        
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <div id="pagina"></div>
+        <input type="button" value="svuota testo" onclick="svuotaTesto()"/><br>
+        <div id="contenitore">
+            <input type="button" value="Q" onclick="scrivi(this.value)">
+            <input type="button" value="W" onclick="scrivi(this.value)">
+            <input type="button" value="E" onclick="scrivi(this.value)">
+            <input type="button" value="R" onclick="scrivi(this.value)">
+            <input type="button" value="T" onclick="scrivi(this.value)">
+            <input type="button" value="Y" onclick="scrivi(this.value)">
+            <input type="button" value="U" onclick="scrivi(this.value)">
+            <input type="button" value="I" onclick="scrivi(this.value)">
+            <input type="button" value="O" onclick="scrivi(this.value)">
+            <input type="button" value="P" onclick="scrivi(this.value)"><br>
+            <input type="button" value="A" onclick="scrivi(this.value)">
+            <input type="button" value="S" onclick="scrivi(this.value)">
+            <input type="button" value="D" onclick="scrivi(this.value)">
+            <input type="button" value="F" onclick="scrivi(this.value)">
+            <input type="button" value="G" onclick="scrivi(this.value)">
+            <input type="button" value="H" onclick="scrivi(this.value)">
+            <input type="button" value="J" onclick="scrivi(this.value)">
+            <input type="button" value="K" onclick="scrivi(this.value)">
+            <input type="button" value="L" onclick="scrivi(this.value)"><br>
+            <input type="button" value="Z" onclick="scrivi(this.value)">
+            <input type="button" value="X" onclick="scrivi(this.value)">
+            <input type="button" value="C" onclick="scrivi(this.value)">
+            <input type="button" value="V" onclick="scrivi(this.value)">
+            <input type="button" value="B" onclick="scrivi(this.value)">
+            <input type="button" value="N" onclick="scrivi(this.value)">
+            <input type="button" value="M" onclick="scrivi(this.value)"><br>
+            <input type="button" value="SPAZIO" onclick="scrivi('&nbsp')">
+            <input type="button" value="INVIO" onclick="scrivi('<br>')">
+            <input type="button" value="TAB" onclick="tab()">
+            <input type="button" value="DELETE" onclick="canc()">
+        </div>
+    </body>
+</html>
