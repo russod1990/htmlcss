@@ -8,8 +8,8 @@
 $(".pulsanteAccesoSpento").click(function() {
   
   if ($(this).hasClass("acceso"))
-    $(this).removeClass("acceso")
+    $(this).removeClass("acceso");
   else
-    $(this).addClass("acceso")
+    $(this).addClass("acceso");
   
-})
+});
