@@ -5,11 +5,18 @@
  */
 
 
-$(".pulsanteAccesoSpento").click(function() {
-  
-  if ($(this).hasClass("acceso"))
-    $(this).removeClass("acceso");
-  else
-    $(this).addClass("acceso");
-  
+$(function () {
+    $(".pulsanteAccesoSpento").click(function () {
+
+        if ($(this).hasClass("acceso"))
+            $(this).removeClass("acceso");
+        else
+            $(this).addClass("acceso")
+    });
+    $(".pulsanteSottolineato").click(function () {
+        if ($(this).hasClass("Sottolineato"))
+            $(this).removeClass("Sottolineato");
+        else
+            $(this).addClass("Classico");
+    });
 });

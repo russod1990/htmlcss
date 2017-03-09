@@ -8,7 +8,7 @@ and open the template in the editor.
     Author     : tss
 */
 
-div {width: 200px;  ;}
+div {width: 400px;}
 
 
 .pulsanteAccesoSpento span:nth-child(2) {
@@ -20,5 +20,17 @@ div {width: 200px;  ;}
 }
 
 .pulsanteAccesoSpento.acceso span:nth-child(2) {
+  font-weight: normal;
+}
+
+.pulsanteSottolineato span:nth-child(2) {
+  font-weight: bold;
+}
+
+.pulsanteSottolineato.Sottolineato span:nth-child(1) {
+  font-weight: bold;
+}
+
+.pulsanteSottolineato.Classico span:nth-child(2) {
   font-weight: normal;
 }
