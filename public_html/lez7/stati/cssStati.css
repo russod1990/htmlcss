@@ -19,7 +19,6 @@ div {width: 400px;}
 }
 
 .pulsanteSottolineato.Sottolineato span:nth-child(1) {
-  font-weight: bold;
   text-decoration: underline;
 }
 
