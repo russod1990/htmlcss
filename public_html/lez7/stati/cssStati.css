@@ -10,11 +10,6 @@ and open the template in the editor.
 
 div {width: 400px;}
 
-
-.pulsanteAccesoSpento span:nth-child(2) {
-  font-weight: bold;
-}
-
 .pulsanteAccesoSpento.acceso span:nth-child(1) {
   font-weight: bold;
 }
@@ -23,12 +18,9 @@ div {width: 400px;}
   font-weight: normal;
 }
 
-.pulsanteSottolineato span:nth-child(2) {
-  font-weight: bold;
-}
-
 .pulsanteSottolineato.Sottolineato span:nth-child(1) {
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .pulsanteSottolineato.Classico span:nth-child(2) {
