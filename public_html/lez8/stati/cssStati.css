@@ -19,7 +19,7 @@ div {width: 400px;}
 }
 
 .pulsanteAccesoSpento.spento span:nth-child(2) {
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .pulsanteSottolineato.acceso span:nth-child(1) {
@@ -32,7 +32,7 @@ div {width: 400px;}
 }
 
 .pulsanteSottolineato.spento span:nth-child(2) {
-    font-weight: normal;
+    font-weight: bold;
 }
 
 .pulsanteCorsivo.acceso span:nth-child(1) {
@@ -46,5 +46,5 @@ div {width: 400px;}
 }
 
 .pulsanteCorsivo.spento span:nth-child(2) {
-    font-weight: normal;
+    font-weight: bold;
 }
