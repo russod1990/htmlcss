@@ -11,12 +11,18 @@ $(function () {
         if ($(this).hasClass("acceso"))
             $(this).removeClass("acceso");
         else
-            $(this).addClass("acceso")
+            $(this).addClass("acceso");
     });
     $(".pulsanteSottolineato").click(function () {
-        if ($(this).hasClass("Sottolineato"))
-            $(this).removeClass("Sottolineato");
+        if ($(this).hasClass("acceso"))
+            $(this).removeClass("acceso");
         else
-            $(this).addClass("Classico");
+            $(this).addClass("acceso");
+    });
+    $(".pulsanteCorsivo").click(function () {
+        if ($(this).hasClass("acceso"))
+            $(this).removeClass("acceso");
+        else
+            $(this).addClass("acceso");
     });
 });
