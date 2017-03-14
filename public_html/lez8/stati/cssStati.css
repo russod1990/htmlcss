@@ -8,5 +8,16 @@ and open the template in the editor.
     Author     : tss
 */
 
-div {width: 400px;}
+div {
+    width: 1200px;
+    height: 600px;
+    border: solid 1px black;}
+div #gif{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    top:0px;
+    left:0px;
+    
+}
 

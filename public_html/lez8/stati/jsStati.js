@@ -5,24 +5,24 @@
  */
 
 
-$(function () {
-    $(".pulsanteAccesoSpento").click(function () {
+var direzione = 1;
+var aX = 0;
+var aY = 0;
+var contatore = 0;
 
-        if ($(this).hasClass("acceso"))
-            $(this).removeClass("acceso");
-        else
-            $(this).addClass("acceso");
+$("#go").click(function () {
+    setInterval(function () {
+        if (direzione === 1) {
+            if (contatore < 12) {
+                aX += 60;
+                contatore++;
+                $("div #gif").css({
+                    "left": aX
+                });
+            } else {
+                direzione=2;
+            }
+        }
+        
     });
-    $(".pulsanteSottolineato").click(function () {
-        if ($(this).hasClass("acceso"))
-            $(this).removeClass("acceso");
-        else
-            $(this).addClass("acceso");
-    });
-    $(".pulsanteCorsivo").click(function () {
-        if ($(this).hasClass("acceso"))
-            $(this).removeClass("acceso");
-        else
-            $(this).addClass("acceso");
-    });
-});
+}, 30);
