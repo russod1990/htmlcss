@@ -12,7 +12,7 @@ var contatore = 0;
 var idTimer = 0;
 
 $("#go").click(function () {
-    $("#go").attr("diabled", "disabled")
+    $("#go").attr("diabled", "disabled");
     document.getElementById("go").disabled;
     idTimer = setInterval(function () {
         if (direzione === 1) {
@@ -60,7 +60,7 @@ $("#go").click(function () {
                 contatore = 0;
             }
         }
-    }, 30);
+    }, 100);
 });
 $("#pStop").click(function () {
     clearInterval(idTimer);
