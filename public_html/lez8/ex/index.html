@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>jquery example</title>
+        <meta charset="UTF-8">
+        <script src="js/jquery-3.2.0.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div id="pulsante">clicca</div>
+        <div id="contenuto"></div>
+ 
+        <script>
+            $("#pulsante").click(function () {
+ 
+                $.ajax({
+                    url: "dati.txt",
+                    success: function(r,s,x) {
+                        $("#contenuto").html(r)
+                    },
+                    error: function(x,s,e) {
+                        alert("errore" )
+                    }
+ 
+                })
+            })
+        </script>
+    </body>
+</html>
