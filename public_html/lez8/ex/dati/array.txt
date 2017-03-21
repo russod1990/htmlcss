@@ -1,0 +1,17 @@
+[
+    {
+        "nome":"emilio",
+        "cognome":"fucà",
+        "email":"prova1"
+    },
+    {
+        "nome":"luca",
+        "cognome":"ciardiello",
+        "email":"prova2"
+    },
+    {
+        "nome":"marco",
+        "cognome":"sirolli",
+        "email":"prova3"
+    }
+]
