@@ -13,14 +13,29 @@ and open the template in the editor.
         <script src="../../js/jquery-3.1.1.min.js" type="text/javascript"></script>
     </head>
     <body>
-        <div id="contenitore">
-            <select>
-                <option></option>
-                <option value="Piemonte">Piemonte</option>
-                <option value="Liguria">Liguria</option>
-                <option value="Lombardia">Lombardia</option>
-                <option value="Valle d'Aosta">Valle d'Aosta</option>
-            </select>
-        </div>
+        <select id='regioni'>
+            <option></option>
+            <option value="piemonte">Piemonte</option>
+            <option value="liguria">Liguria</option>
+            <option value="lombardia">Lombardia</option>
+            <option value="valledaosta">Valle d'Aosta</option>
+        </select>
+        <select id='province'>
+            
+        </select>
+        <script>
+        $("#regioni").change(function(){
+            var regione=$(this).val()
+            $.ajax({
+                "url":"file/"+regione,
+                "success":function (r,s,x){
+                    alert(r)
+                },
+                "error":function(e,x,y){
+                    
+                }
+            })
+        })
+        </script>
     </body>
 </html>
