@@ -8,3 +8,27 @@ and open the template in the editor.
     Author     : tss
 */
 
+#foto{
+    height: 225px;
+    width: 225px;
+}
+
+#contenitore{
+    border: solid 1px blue;
+    display: table-cell;
+    height: 900px;
+    width: 900px;
+}
+
+#miniature{
+    display: inline-block;
+    float: left;
+    position: relative;
+    padding-bottom: 0px;
+}
+
+#display{
+    border: solid thin red;
+    height: 600px;
+    width: 600px;
+}
