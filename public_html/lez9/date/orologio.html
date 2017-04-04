@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Orologio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../js/jquery-3.1.1.js" type="text/javascript"></script>
+        <script src="../../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <link href="orologio.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div id="orologio"></div>
+
+        <div id="orologioAnalogico">
+            <div id="lancettaOra" class="lancetta"></div>
+            <div id="lancettaMinuti" class="lancetta"></div>
+            <div id="lancettaSecondi" class="lancetta"></div>
+        </div>
+        <script>
+            function getOraMinSec() {
+                var t = new Date()
+                var h = t.getHours()
+                var m = t.getMinutes()
+                var s = t.getSeconds()
+                var ms = t.getMilliseconds()
+
+                var mm = (m < 10) ? "0" + m : m
+                var ss = (s < 10) ? "0" + s : s
+
+                return h + ":" + mm + ":" + ss
+            }
+
+            function scriviOra() {
+                $("#orologio").html(getOraMinSec())
+            }
+
+            function scriviOraAnalogica() {
+                var adesso = new Date()
+                var aOra = adesso.getHours() * 30 - 90
+                var aMin = adesso.getMinutes() * 6 - 90
+                var aSec = adesso.getSeconds() * 6 - 90
+
+                $("#lancettaOra").css("transform", `rotate(${aOra}deg)`)
+                $("#lancettaMinuti").css("transform", `rotate(${aMin}deg)`)
+                $("#lancettaSecondi").css("transform", `rotate(${aSec}deg)`)
+            }
+
+
+
+            setInterval(function () {
+                scriviOra()
+            }, 1000)
+
+
+        </script>
+    </body>
+</html>

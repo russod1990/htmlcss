@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../js/jquery-3.1.1.js" type="text/javascript"></script>
+        <script src="../../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <input type="button" value="Anno" onclick="mostraAnno()">
+        <input type="button" value="Mese" onclick="mostraMese()">
+        <input type="button" value="Giorno" onclick="mostraGiorno()">
+        <script>
+            t=new Date();
+            mesi={gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre};
+            giorniS={domenica, lunedi, martedì, mercoledì, giovedì, venerdì, sabato};
+            function mostraAnno(){
+                var y;
+                y=t.getFullYear();
+                alert(y);
+            }
+            function mostraMese(){
+                var m;
+                m=t.getMonth()+1;
+                alert(m);
+            }
+            function mostraGiorno(){
+                var d;
+                d=t.getDay();
+                alert(d);
+            }
+        </script>
+    </body>
+</html>
