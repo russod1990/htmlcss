@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../../js/jquery-3.1.1.js" type="text/javascript"></script>
+        <script src="../../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+        <link href="newcss.css" rel="stylesheet" type="text/css"/>
+        <script src="javascript.js" type="text/javascript"></script>
+<!--        <style>
+            [contentEditable=true]:empty:not(:focus):before{
+                content:attr(data-placeholder);
+                color: #BABABA;
+            }
+        </style>
+-->
+    </head>
+    <body>
+        <div id="testo" contenteditable="true" data-placeholder="Scrivo qui il mio placeholder">...</div>
+        <button id="font" onclick="document.execCommand('italic', false, '')">italic</button>
+        <input id="bold" type="button" value="bold" onclick="document.execCommand('bold',false,'')">
+        <span id="underline" onclick="document.execCommand('underline',false,'')" onmousedown="event.preventDefault()">underline</span>
+        <button id="save" onclick="">salva</button>
+    </body>
+</html>
