@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JQUERY UI EXAMPLE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../js/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet" type="text/css"/>
+        <style>
+            #dragAndDrop { width: 150px; height: 150px; padding: 0.5em; }
+        </style>
+        <script src="../js/jquery-3.2.0.min.js" type="text/javascript"></script>
+        <script src="../js/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+        <script>
+            $(function () {
+                $("#dragAndDrop").draggable({cursor: "move", cursorAt: {top: 56, left: 56}});
+            });
+        </script>
+    </head>
+    <body>
+        <div>PROVE CON JQUERY UI</div>
+        <div id="dragAndDrop" class="ui-widget-content">
+            <p>Spostami per la pagina usando il drag and drop</p>
+        </div>
+    </body>
+</html>
