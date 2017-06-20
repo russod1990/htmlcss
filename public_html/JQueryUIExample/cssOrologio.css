@@ -21,13 +21,14 @@ and open the template in the editor.
 }
 
 #orologioAnalogico {
-    width: 502px;
-    height: 502px;
-    border: solid 2px gray;
+    width: 520px;
+    height: 520px;
+    border: solid 20px gray;
     border-radius: 50%;
     position: relative;
     padding: 0px;
     margin: 50px auto;
+    background-image: url("sfondo.jpg");
 }
 
 .centro{
@@ -36,7 +37,7 @@ and open the template in the editor.
     left: 46%;
     top: 46%;
     margin: auto;
-    background-color: black;
+    background-color: orange;
     width: 50px;
     height: 50px;
     border: solid 1px;

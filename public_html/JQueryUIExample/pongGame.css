@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-giu-2017, 11.07.21
+    Author     : tss
+*/
+body { background-color: black; color: #AAA; font-size: 12pt; padding: 1em; }
+
+
+#field{
+    
+}
+.giocatore {
+    height: 120px;
+    width: 20px;
+    border: solid 1px;
+    background-color: white;
+    position: absolute;
+}
+
+#giocatore1 {
+    left: 10%;
+}
+
+#giocatore2 {
+    right: 10%;
+}
+
+#pallina {
+    width: 20px;
+    height: 20px;
+    /*border-radius: 50%;*/
+    border: solid 1px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    position: fixed;
+}
+
+#centrocampo{    
+    top:0%;
+    left:50%;
+    width: 20px;
+    border:solid 1px;
+    background-color: white;
+    min-height: 100%;
+    position:absolute;
+}
