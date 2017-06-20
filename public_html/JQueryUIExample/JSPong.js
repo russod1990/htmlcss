@@ -37,38 +37,6 @@ $("body").keydown(function (e1) {
 
 })
 
-//$("body").keydown(function (e2) {
-//    var tasto = e2.which
-//
-//    switch (tasto) {
-//        case 79:
-//            $("#giocatore2").css("top", "-=10")
-//            break;
-//        case 76:
-//            $("#giocatore2").css("top", "+=10")
-//            break;
-//            //case 87:
-//            // $("#giocatore1").css("top", "-=3")
-//            //break;
-//            //case 83:
-//            //$("#giocatore1").css("top", "+=3")
-//            // break;
-//
-//            //case 107:
-//            //var v = $("#pallina").data("velocita")
-//            //$("#pallina").data("velocita", v + .5);
-//            //break;
-//
-//            //case 109:
-//            //var v = $("#pallina").data("velocita")
-//            //$("#pallina").data("velocita", v - .5);
-//            //break;
-//        default:
-//            console.log("tasto", tasto)
-//    }
-//
-//})
-
 $("#pallina").data({
     "direzione": 45,
     "velocita": 5
@@ -97,7 +65,7 @@ function muoviPallina() {
         $(p).data("direzione", -aDeg)
     }
 
-    if (nx < 0 || nx > $("body").width()+20) {
+    if (nx < 0 || nx > $("body").width() + 20) {
         $(p).data("direzione", 90 + aDeg)
     }
 
