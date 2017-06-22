@@ -11,7 +11,7 @@ body { background-color: black; color: #AAA; font-size: 12pt; padding: 1em; }
 
 
 #field{
-    
+
 }
 .giocatore {
     height: 120px;
@@ -22,11 +22,11 @@ body { background-color: black; color: #AAA; font-size: 12pt; padding: 1em; }
 }
 
 #giocatore1 {
-    left: 10%;
+    left: 0%;
 }
 
 #giocatore2 {
-    right: 10%;
+    right: 0%;
 }
 
 #pallina {

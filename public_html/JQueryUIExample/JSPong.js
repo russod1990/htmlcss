@@ -69,6 +69,26 @@ function muoviPallina() {
         $(p).data("direzione", 90 + aDeg)
     }
 
+
+    var xGiocatore2 = Number($("#giocatore2").css("left").replace(/px$/, ''));
+    var yGiocatore2 = Number($("#giocatore2").css("top").replace(/px$/, ''));
+    var xGiocatore1 = Number($("#giocatore1").css("left").replace(/px$/, ''));
+    var yGiocatore1 = Number($("#giocatore1").css("top").replace(/px$/, ''));
+    console.log(nx + " " + xGiocatore1);
+    if (nx > xGiocatore2 - 20 && ny > yGiocatore2 && ny < yGiocatore2 + 120) {
+        $(p).data("direzione", 90 + aDeg)
+    }
+    if (nx < xGiocatore1 + 20 && ny > yGiocatore1 && ny < yGiocatore1 + 120) {
+        $(p).data("direzione", 90 + aDeg)
+    }
+    
+    if (nx=0){
+        $(p).css() //reimpostare alla posizione centrale
+    }
+    
+    if (nx=($("body").width()+20)){
+        $(p).css() //reimpostare alla posizione centrale
+    }
 }
 
 setInterval(function () {
